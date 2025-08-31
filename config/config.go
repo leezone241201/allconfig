@@ -57,9 +57,24 @@ func NewConfig() *Config {
 	return config
 }
 
-func NewConfigByPath(path string) (*Config, error) {
-	cfg := &Config{}
-	return cfg, nil
+func NewConfigByPath(path string) *Config {
+	v := viper.New()
+	v.SetConfigFile(path)
+
+	err := v.ReadInConfig()
+	if err != nil {
+		log.Fatalf("Fatal error config file: %s \n", err)
+	}
+
+	setDefault(v)
+	v.AutomaticEnv()
+
+	config := new(Config)
+	err = v.Unmarshal(config)
+	if err != nil {
+		log.Fatalf("Unable to decode into struct, %v", err)
+	}
+	return config
 }
 
 func setDefault(v *viper.Viper) {

@@ -27,6 +27,7 @@ go.work.sum
 # env file
 .env
 env.yaml
+*_test.go
 
 # Editor/IDE
 # .idea/
