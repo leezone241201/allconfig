@@ -1,0 +1,15 @@
+mysql:
+  - host: locahost
+    port: 3306
+    user: root
+    password: password
+    database: database
+    charset: utf8mb4
+    role: master
+  - host: locahost
+    port: 3306
+    user: root
+    password: password
+    database: database
+    charset: utf8mb4
+    role: slave
