@@ -1,4 +1,4 @@
-module github.com/leezone/allconfig
+module github.com/leezone241201/allconfig
 
 go 1.24.6
 

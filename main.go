@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/leezone/allconfig/config"
-	"github.com/leezone/allconfig/middleware/db"
+	"github.com/leezone241201/allconfig/config"
+	"github.com/leezone241201/allconfig/middleware/db"
 )
 
 func main() {

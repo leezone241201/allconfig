@@ -4,7 +4,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/leezone/allconfig/config"
+	"github.com/leezone241201/allconfig/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )

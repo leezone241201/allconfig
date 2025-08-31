@@ -67,8 +67,8 @@ func setDefault(v *viper.Viper) {
 		{
 			Host:     "localhost",
 			Port:     3306,
-			User:     "example",
-			Password: "example",
+			User:     "root",
+			Password: "",
 			Database: "mydb",
 			Charset:  "utf8mb4",
 			Role:     "master",
